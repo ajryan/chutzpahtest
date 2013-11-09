@@ -1,4 +1,5 @@
 ﻿/// <reference path="Scripts/jasmine.js"/>
+/// <reference path="Scripts/jasmine-html.js"/>
 /// <reference path="controller.js"/>
 
 describe("new controller", function() {
