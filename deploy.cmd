@@ -82,7 +82,7 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 3. Unit tests
-"%DEPLOYMENT_SOURCE%\packages\Chutzpah.2.5.0\tools\chutzpah.console.exe" "%DEPLOYMENT_SOURCE%\ChutzpahTest\controllerSpec.js"
+"%DEPLOYMENT_SOURCE%\packages\Chutzpah.2.5.0\tools\chutzpah.console.exe" "%DEPLOYMENT_SOURCE%\ChutzpahTest\controllerSpec.js" /debug
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 4. KuduSync
